@@ -47,6 +47,7 @@
           $('.modal .modal-content .contentOne').addClass(y + '  animated')
           $('.modal .modal-content .contentTwo').addClass(z + '  animated')
           $('.modal .modal-content .contentThree').addClass(z + '  animated')
+          // alignCenter
           // if(y){
           //   $('.modal li').each(function(i, el) {
           //     debugger
@@ -58,6 +59,11 @@
           // }
       };
       $('#exampleModalCenter').on('show.bs.modal', function (e) {
+
+        // var anim = $('#entrance').val();
+            testAnim("zoomIn",'flipInX','flipInX');
+      })
+      $('#myModalselectedworks').on('show.bs.modal', function (e) {
 
         // var anim = $('#entrance').val();
             testAnim("zoomIn",'flipInX','flipInX');
