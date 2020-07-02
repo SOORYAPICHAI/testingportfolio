@@ -556,6 +556,16 @@ a:hover, a:active, a:focus {
   --colour-text: #1a1a1a;
 }
 
+.title-::after{
+  content: "";
+  height: 3px;
+  width: 10%;
+  background-color: var(--colour-body-background);
+  position: absolute;
+  bottom: .8em;
+  left: 50%;
+  transform: translate(-50%);
+}
 /* *, :after, :before {
   box-sizing: border-box;
   margin: 0;
@@ -593,7 +603,7 @@ a:hover, a:active, a:focus {
   position: absolute;
   top: calc(var(--base-grid)*-2);
   left: calc(var(--base-grid)*-2);
-  border: 2px dashed var(--colour-background-dot);
+  border: 2px solid var(--colour-background-dot);
   background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px,var(--colour-background-stripes) 0, var(--colour-background-stripes) 5px);
   z-index: -1;
 }
@@ -699,6 +709,11 @@ a:hover, a:active, a:focus {
 @media (min-width: 568px) and (max-width: 665px) {
   #home {
     height: 190vh;
+  }
+  .title-::after{
+    
+    width: 20%;
+  
   }
 }
 
