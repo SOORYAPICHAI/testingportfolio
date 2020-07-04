@@ -368,7 +368,7 @@ a:hover, a:active, a:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
    align-items: center;
-  height: 100vh;
+  height: calc(100vh - 80px);
   position: relative;
   padding-top: 62px;
 }
@@ -376,6 +376,14 @@ a:hover, a:active, a:focus {
 #home img {
   width: 120px;
   height: 120px;
+}
+.homePrimaryText{
+  font-weight: bold;
+  text-align: center;
+}
+.homeSecondaryText{
+  font-size: 3rem;
+  text-align: center;
 }
 
 
@@ -1038,6 +1046,7 @@ process
   #home {
     height: 140vh;
   }
+  
 }
 
 @media (min-width: 568px) and (max-width: 665px) {
@@ -1068,7 +1077,18 @@ process
     font-size: 30px;
     line-height: normal;
   }
-
+  .homeSecondaryText{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+  }
+  .homePrimaryText{
+    font-size: 2.2rem;
+    line-height: 30px;
+  }
+  .homePrimaryTextAuthor{
+    margin-bottom: 20px;
+  }
   h2  {font-size: 30px;}
 
   .custom-navbar {
